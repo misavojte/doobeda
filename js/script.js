@@ -8,6 +8,11 @@
   var textgrafika = document.getElementsByClassName("grafika-t");
   var i;
 
+  var navicon = document.getElementById("nav-icon3");
+  var navitems = document.getElementById("nav-items");
+  var navbar = document.getElementById("navbar");
+  var toggledmenu = false;
+
 
 btnkampane.addEventListener("mouseover", function () {
 
@@ -55,3 +60,35 @@ btngrafika.addEventListener("mouseover", function () {
   btngrafika.classList.add("active-dot");
 
 });
+
+navicon.addEventListener("click", toggleMenu);
+
+function toggleMenu() {
+
+    navbar.classList.toggle("open");
+    navicon.classList.toggle("open");
+
+    if (toggledmenu) {
+
+      navitems.style.opacity = 0;
+      setTimeout(function()
+        { navitems.classList.toggle("toggling");
+      }, 300);
+
+      toggledmenu = false;
+
+    } else {
+      navitems.classList.toggle("toggling");
+      setTimeout(function()
+        { navitems.style.opacity = 1;
+      }, 150);
+
+      var menuodkazy = document.getElementsByClassName("menu-items toggling");
+
+      for (i = 0; i < menuodkazy.length; i++) {
+        menuodkazy[i].addEventListener("click", toggleMenu);
+      };
+
+      toggledmenu = true;
+
+    }};
