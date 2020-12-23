@@ -478,14 +478,25 @@ section {
     .tym-kruh-velky {
       width: calc(100vh * 0.9);
       height: calc(100vh * 0.9);
-      min-height: 500px;
-      min-width: 500px;
       border-radius: 50%;
       background: var(--main-col);
       position: absolute;
       left: 10%;
-      top: 15%;
+      top: 25%;
     }
+
+      @media only screen and (max-width:600px) {
+        .tym-kruh-velky {
+          width: calc(100vh * 0.9 / 2);
+          height: calc(100vh * 0.9 / 2);
+          left: 50%;
+        }
+        #tym {
+          grid-template-columns:auto;
+          grid-template-rows: 60% 40%;
+          grid-auto-flow: row;
+        }
+      }
 
 @keyframes dot-move {
   0%   {transform: translate(0%,0%);}
