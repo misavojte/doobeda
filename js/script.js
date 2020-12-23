@@ -10,6 +10,7 @@
 
   var navicon = document.getElementById("nav-icon3");
   var navitems = document.getElementById("nav-items");
+  var menuodkazy = document.getElementsByClassName("menu-hrefs");
   var navbar = document.getElementById("navbar");
   var toggledmenu = false;
 
@@ -70,9 +71,13 @@ function toggleMenu() {
 
     if (toggledmenu) {
 
-      navitems.style.opacity = 0;
+      navitems.style.opacity = "";
+
       setTimeout(function()
         { navitems.classList.toggle("toggling");
+          for (i = 0; i < menuodkazy.length; i++) {
+            menuodkazy[i].removeEventListener("click", toggleMenu);
+          };
       }, 300);
 
       toggledmenu = false;
@@ -82,8 +87,6 @@ function toggleMenu() {
       setTimeout(function()
         { navitems.style.opacity = 1;
       }, 150);
-
-      var menuodkazy = document.getElementsByClassName("menu-items toggling");
 
       for (i = 0; i < menuodkazy.length; i++) {
         menuodkazy[i].addEventListener("click", toggleMenu);
