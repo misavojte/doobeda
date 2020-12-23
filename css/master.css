@@ -107,7 +107,7 @@ body {
       padding: 20px 0px;
             }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 599px) {
      .menu-items {
        display: none;
                   }
@@ -124,6 +124,12 @@ body {
       flex-flow: column;
       transition: .4s;
       padding-top: 90px;
+    }
+
+    @media only screen and (min-width: 600px) {
+     .menu-items {
+       display: flex;
+                  }
     }
 
     /* Ikonka co rozbaluje meníčko na mobilu */
