@@ -4,7 +4,6 @@
 
   var textkampane = document.getElementsByClassName("kampane-t");
   var textweby = document.getElementsByClassName("weby-t");
-  var textkampane = document.getElementsByClassName("kampane-t");
   var textgrafika = document.getElementsByClassName("grafika-t");
   var i;
 
@@ -13,11 +12,6 @@
   var menuodkazy = document.getElementsByClassName("menu-hrefs");
   var navbar = document.getElementById("navbar");
   var toggledmenu = false;
-
-  var bubblebtns = document.getElementById("bubblebtns");
-  var slider = document.getElementsByClassName("slider");
-  var tymsec = document.getElementById("tym");
-
 
 
 btnkampane.addEventListener("mouseover", function () {
@@ -103,19 +97,3 @@ function toggleMenu() {
       toggledmenu = true;
 
     }};
-
-
-
-
-slider[0].addEventListener("scroll", offsetCont);
-
-function offsetCont() {
-
-
-  if (bubblebtns.offsetTop < tymsec.offsetTop) {
-
-  } else {
-    bubblebtns.style.position = "absolute";
-  }
-
-};

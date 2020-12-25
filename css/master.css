@@ -17,6 +17,11 @@
   --test: 100vw;
 }
 
+::selection {
+  color: white;
+  background: var(--main-col);
+}
+
 html, body {
     display: flex;
     flex-direction: column;
@@ -265,9 +270,9 @@ section {
   min-height: 100%;
   width: 100%;
   scroll-snap-align: start;
-  grid-auto-flow: column;
-  display: grid;
-  place-items: center;
+  flex-flow: column;
+  display: flex;
+  justify-content: center;
   padding-top: 70px;
 }
 
@@ -298,9 +303,10 @@ section {
       }
     }
 
-    .sec-column > h2 > .static-span {
+    .sec-column > h2 > .static-span, .sec-column > div > p > span {
       color: var(--main-col);
       transition: color .4s;
+      font-weight: bolder;
     }
 
     .sec-column > p {
@@ -328,20 +334,29 @@ section {
       box-shadow: 0 0px 20px -10px black;
     }
 
+.bubble-wrapper {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
     .bubble-container {
       position: sticky;
       box-sizing: border-box;
       width: 100%;
       top: 0;
       height: 50%;
+      padding-top: calc(70px + 15%);
+      padding-bottom: 15%;
       display: flex;
       transition: 1s linear;
-      
     }
 
-    @media only screen and (max-width: 400px) and (min-height: 680px), (min-width: 1599px) and (min-height: 899px) {
+    @media only screen and (max-width: 400px) and (min-height: 680px), (min-width: 1599px) and (min-height: 899px), (min-height: 1000px) {
       .bubble-container {
-        height: 60%;
+        padding-top: calc(70px + 25%);
+        padding-bottom: 25%;
       }
     }
 
@@ -440,9 +455,12 @@ section {
     }
 
   #tym {
+    display: grid;
     grid-template-columns: 60% 40%;
     grid-auto-flow: column;
     grid-auto-rows: 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 
     #tym > .text-container {
