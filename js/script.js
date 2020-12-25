@@ -14,6 +14,11 @@
   var navbar = document.getElementById("navbar");
   var toggledmenu = false;
 
+  var bubblebtns = document.getElementById("bubblebtns");
+  var slider = document.getElementsByClassName("slider");
+  var tymsec = document.getElementById("tym");
+
+
 
 btnkampane.addEventListener("mouseover", function () {
 
@@ -62,6 +67,9 @@ btngrafika.addEventListener("mouseover", function () {
 
 });
 
+
+
+
 navicon.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
@@ -95,3 +103,19 @@ function toggleMenu() {
       toggledmenu = true;
 
     }};
+
+
+
+
+slider[0].addEventListener("scroll", offsetCont);
+
+function offsetCont() {
+
+
+  if (bubblebtns.offsetTop < tymsec.offsetTop) {
+
+  } else {
+    bubblebtns.style.position = "absolute";
+  }
+
+};
