@@ -342,116 +342,119 @@ section {
 }
 
     .bubble-container {
-      position: sticky;
-      box-sizing: border-box;
-      width: 100%;
-      top: 0;
+      padding-top: 70px;
+      padding-left: 5px;
+      padding-right: 5px;
       height: 50%;
-      padding-top: calc(70px + 15%);
-      padding-bottom: 15%;
-      display: flex;
-      transition: 1s linear;
+      box-sizing: border-box;
+      display: grid;
+      position: sticky;
+      top: 0;
+      grid-auto-columns: 1fr;
+      grid-auto-rows: max-content;
+      margin: auto;
+      justify-content: center;
+      align-content: center;
+      max-width: 40vh;
     }
 
     @media only screen and (max-width: 400px) and (min-height: 680px), (min-width: 1599px) and (min-height: 899px), (min-height: 1000px) {
       .bubble-container {
-        padding-top: calc(70px + 25%);
-        padding-bottom: 25%;
+
       }
     }
 
     .dot {
-      height: inherit;
-      width: inherit;
-      background-color: #bbb;
+      box-sizing: content-box;
+      width: 40%;
+      padding-bottom: 40%;
       border-radius: 50%;
-      display: flex;
-      transition: all .4s ease-in-out;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      box-shadow: 0px 0px 10px -8px black;
-      position: absolute;
+      background: gray;
+      position: relative;
+      overflow:hidden;
+      float: right;
+      transition: all .6s ease-in-out;
     }
 
-    .d-wrap {
-      height: 7rem;
-      width: 7rem;
-      position: absolute;
-      display: flex;
-      transition: all .4s ease-in-out;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
+    #btnkampane.dot {
+      float: left;
     }
 
-    .dot > p {
-      color: white;
-      letter-spacing: 1px;
-    }
+
+
+      .dot > div {
+        position: absolute;
+        height:80%;
+        width:90%;
+        padding: 10% 5%;
+      }
+
+        .dot > div > div {
+          display: table;
+          width: 100%;
+          height: 100%;
+        }
+
+          .dot > div > div > p {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+          }
 
     .active-dot {
-      transform: scale(1.7);
       background-color: var(--main-col);
-      box-shadow: 0px 0px 20px -8px black;
+      width: 80%;
+      padding-bottom: 80%;
     }
 
     @media only screen and (min-width: 1365px) and (min-height: 787px) {
       .dot {
-        transform: scale(1.2);
+
       }
     }
 
     @media only screen and (max-width: 600px) {
       .dot {
-        transform: scale(0.9);
+
       }
     }
 
     @media only screen and (max-width: 400px) {
       .dot {
-        transform: scale(0.7);
+
       }
     }
 
     @media only screen and (min-width: 1365px) and (min-height: 787px) {
       .active-dot {
-        transform: scale(2.05);
+
       }
     }
 
     @media only screen and (max-width: 600px) {
       .active-dot {
-        transform: scale(1.3);
+
       }
     }
 
     @media only screen and (max-width: 400px) {
       .active-dot {
-        transform: scale(1);
+        width: 100%;
+        padding-bottom: 100%;
       }
     }
 
 
     .d-kampane {
-      align-self: center;
-      left: 15%;
-      animation: -6s dot-move 10s;
-      animation-iteration-count: infinite;
+      animation: dot-move 10s infinite;
     }
 
     .d-weby {
-      align-self: flex-start;
-      right: 15%;
-      animation: -4s dot-move 10s;
-      animation-iteration-count: infinite;
+      animation: -3.3s dot-move 10s infinite;
     }
 
     .d-grafika {
-      align-self: flex-end;
-      right: 15%;
-      animation: -2s dot-move 10s;
-      animation-iteration-count: infinite;
+      animation: -6.6s dot-move 10s infinite;
     }
 
   #tym {
