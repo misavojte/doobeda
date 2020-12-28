@@ -1,20 +1,68 @@
-/* cabin-regular - latin */
+/* spartan-regular - latin-ext_latin */
 @font-face {
-  font-family: 'Cabin';
+  font-family: 'Spartan';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/cabin/cabin-v17-latin-ext_latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/spartan-v2-latin-ext_latin-regular.eot'); /* IE9 Compat Modes */
   src: local(''),
-       url('../fonts/cabin/cabin-v17-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/cabin/cabin-v17-latin-ext_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/cabin/cabin-v17-latin-ext_latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/cabin/cabin-v17-latin-ext_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/cabin/cabin-v17-latin-ext_latin-regular.svg#Cabin') format('svg'); /* Legacy iOS */
+       url('../fonts/spartan-v2-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/spartan-v2-latin-ext_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/spartan-v2-latin-ext_latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/spartan-v2-latin-ext_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/spartan-v2-latin-ext_latin-regular.svg#Spartan') format('svg'); /* Legacy iOS */
+}
+/* spartan-800 - latin-ext_latin */
+@font-face {
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/spartan-v2-latin-ext_latin-800.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/spartan-v2-latin-ext_latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/spartan-v2-latin-ext_latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/spartan-v2-latin-ext_latin-800.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/spartan-v2-latin-ext_latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/spartan-v2-latin-ext_latin-800.svg#Spartan') format('svg'); /* Legacy iOS */
+}
+
+/* montserrat-regular - latin-ext_latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v15-latin-ext_latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/montserrat-v15-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v15-latin-ext_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v15-latin-ext_latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v15-latin-ext_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v15-latin-ext_latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-600 - latin-ext_latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/montserrat-v15-latin-ext_latin-600.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/montserrat-v15-latin-ext_latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v15-latin-ext_latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v15-latin-ext_latin-600.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v15-latin-ext_latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v15-latin-ext_latin-600.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+
+p, a {
+  font-family: Montserrat, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: Spartan, sans-serif;
 }
 
 :root {
   --main-col: #FF1654;
-  --test: 100vw;
 }
 
 ::selection {
@@ -28,13 +76,12 @@ html, body {
     place-items: center;
     height: 100%;
     width: 100%;
-    font-family: Cabin, sans-serif;
     overflow: hidden;
     margin: 0;
   }
 
 body {
-      background-color: #fafafa;
+      background-color: #f3f2ef;
     }
 
 .hidden {
@@ -54,8 +101,7 @@ body {
   position: fixed;
   left: 0;
   right: 0;
-  background-color: white;
-  box-shadow: 0 5px 10px -10px black;
+  background-color: #f3f2ef;
   z-index: 1;
   transition: all .6s ease-in-out;
     }
@@ -292,24 +338,24 @@ section {
     }
 
 
-    .sec-column > h2, .clen-tymu > h2 {
+    .sec-column > div > h2, .clen-tymu > h2 {
       font-size: 3.5rem;
       margin: 0;
     }
 
     @media only screen and (max-width: 600px) {
-      .sec-column > h2, .clen-tymu > h2 {
+      .sec-column > div > h2, .clen-tymu > h2 {
         font-size: 2rem;
       }
     }
 
-    .sec-column > h2 > .static-span, .sec-column > div > p > span {
+    .sec-column > div > h2 > span, .sec-column > div > p > span {
       color: var(--main-col);
       transition: color .4s;
       font-weight: bolder;
     }
 
-    .sec-column > p {
+    .sec-column > div > p, .sec-column > p {
       font-size: 1rem;
       max-width: 800px;
     }
@@ -321,7 +367,8 @@ section {
     .content-btn {
       background-color: var(--main-col);
       color: white;
-      font: 400 1rem Cabin;
+      font-size: 1rem;
+      font-weight: bold;
       border-style: none;
       border-radius: 25px;
       padding: 6px 20px;
@@ -332,6 +379,27 @@ section {
     .content-btn:hover {
       cursor: pointer;
       box-shadow: 0 0px 20px -10px black;
+    }
+
+    .kampane-t {
+      --main-col: #FF1654;
+    }
+
+    .weby-t {
+      --main-col: #F49912;
+    }
+
+    .grafika-t {
+      --main-col: #2492D8;
+    }
+
+    .tra {
+      opacity: 0;
+      transform: translateX(-10%);
+    }
+
+    .first-slide {
+      transition: .3s ease-out;
     }
 
 .bubble-wrapper {
@@ -355,7 +423,7 @@ section {
       margin: auto;
       justify-content: center;
       align-content: center;
-      max-width: 40vh;
+      max-width: 50vh;
     }
 
     @media only screen and (max-width: 400px) and (min-height: 680px), (min-width: 1599px) and (min-height: 899px), (min-height: 1000px) {
@@ -399,6 +467,9 @@ section {
             display: table-cell;
             vertical-align: middle;
             text-align: center;
+            color: white;
+            font-size: 2.6vmin;
+            font-weight: bold;
           }
 
     .active-dot {
@@ -446,15 +517,15 @@ section {
 
 
     .d-kampane {
-      animation: dot-move 10s infinite;
+      animation: dot-move 15s infinite;
     }
 
     .d-weby {
-      animation: -3.3s dot-move 10s infinite;
+      animation: -5s dot-move 15s infinite;
     }
 
     .d-grafika {
-      animation: -6.6s dot-move 10s infinite;
+      animation: -10s dot-move 15s infinite;
     }
 
   #tym {
@@ -485,6 +556,12 @@ section {
       margin: 0;
       color: var(--main-col);
       font-style: italic;
+    }
+
+    .clen-tymu > h3 {
+      padding-top: 20px;
+      font-size: 1.7rem;
+      margin: 0;
     }
 
     .tym-switch {
@@ -536,8 +613,8 @@ section {
 
 @keyframes dot-move {
   0%   {transform: translate(0%,0%);}
-  25%  {transform: translate(10%,2%);}
-  50%  {transform: translate(-14%,6%);}
-  75%  {transform: translate(6%,-8%);}
+  25%  {transform: translate(5%,1%);}
+  50%  {transform: translate(-7%,3%);}
+  75%  {transform: translate(3%,-4%);}
   100% {transform: translate(0%,0%);}
 }
