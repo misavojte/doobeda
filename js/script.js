@@ -15,9 +15,9 @@
   var navbar = document.getElementById("navbar");
   var toggledmenu = false;
 
-btnkampane.addEventListener("mouseover", kamAniStart());
-btnweby.addEventListener("mouseenter", webyAniStart());
-btngrafika.addEventListener("mouseenter", grafiAniStart());
+btnkampane.addEventListener("mouseover", kamAniStart);
+btnweby.addEventListener("mouseenter", webyAniStart);
+btngrafika.addEventListener("mouseenter", grafiAniStart);
 
 function kamAniStart() {
   if (activeTopic != 1 && notfadingOut) {
