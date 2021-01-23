@@ -95,7 +95,7 @@ function slideOutTextAnim() {
     obrgrafika[i].classList.add("tra2");
     obrweby[i].classList.add("tra2");
   };
-  
+
 }
 
 async function changeTextAnim() {
@@ -214,3 +214,28 @@ function toggleMenu() {
       toggledmenu = true;
 
     }};
+
+
+    //zešedivění elementů při hoveru v týmu
+    var kpurl = document.getElementById("kpurl");
+    var wpurl = document.getElementById("wpurl");
+    var gpurl = document.getElementById("gpurl");
+
+    kpurl.addEventListener("mouseover", mOver, false);
+    kpurl.addEventListener("mouseout", mOut, false);
+    wpurl.addEventListener("mouseover", mOver, false);
+    wpurl.addEventListener("mouseout", mOut, false);
+    gpurl.addEventListener("mouseover", mOver, false);
+    gpurl.addEventListener("mouseout", mOut, false);
+
+    function mOver() {
+       document.getElementsByClassName("kampane-t").style.setProperty('--main-col', "gray");
+       document.getElementsByClassName("weby-t").style.setProperty('--main-col', "gray");
+       document.getElementsByClassName("grafika-t").style.setProperty('--main-col', "gray");
+    }
+
+    function mOut() {
+      document.getElementsByClassName("kampane-t").style.setProperty('--main-col', "#FF1654");
+      document.getElementsByClassName("weby-t").style.setProperty('--main-col', "#FF1654");
+      document.getElementsByClassName("grafika-t").style.setProperty('--main-col', "#FF1654");
+    }
