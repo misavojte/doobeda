@@ -90,7 +90,7 @@ function slideOutTextAnim() {
     textgrafika[i].classList.add("tra");
     textweby[i].classList.add("tra");
   };
-  for (var i = 0; i < textkampane.length; i++) {
+  for (var i = 0; i < obrkampane.length; i++) {
     obrkampane[i].classList.add("tra2");
     obrgrafika[i].classList.add("tra2");
     obrweby[i].classList.add("tra2");
@@ -103,7 +103,7 @@ async function changeTextAnim() {
     textgrafika[i].classList.add("hidden");
     textweby[i].classList.add("hidden");
   };
-  for (var i = 0; i < textkampane.length; i++) {
+  for (var i = 0; i < obrkampane.length; i++) {
     obrkampane[i].classList.add("hidden");
     obrgrafika[i].classList.add("hidden");
     obrweby[i].classList.add("hidden");
@@ -121,21 +121,21 @@ async function showTextAnim() {
     for (var i = 0; i < textkampane.length; i++) {
       textkampane[i].classList.remove("hidden");
     };
-    for (var i = 0; i < textkampane.length; i++) {
+    for (var i = 0; i < obrkampane.length; i++) {
       obrkampane[i].classList.remove("hidden");
     };
   } else if (activeTopic == 3) {
     for (var i = 0; i < textkampane.length; i++) {
       textgrafika[i].classList.remove("hidden");
     };
-    for (var i = 0; i < textkampane.length; i++) {
+    for (var i = 0; i < obrkampane.length; i++) {
       obrgrafika[i].classList.remove("hidden");
     };
   } else {
     for (var i = 0; i < textkampane.length; i++) {
       textweby[i].classList.remove("hidden");
     };
-    for (var i = 0; i < textkampane.length; i++) {
+    for (var i = 0; i < obrkampane.length; i++) {
       obrweby[i].classList.remove("hidden");
     };
   };
@@ -153,21 +153,21 @@ async function slideInTextAnim() {
       for (var i = 0; i < textkampane.length; i++) {
         textkampane[i].classList.remove("tra");
       };
-      for (var i = 0; i < textkampane.length; i++) {
+      for (var i = 0; i < obrkampane.length; i++) {
         obrkampane[i].classList.remove("tra");
       };
     } else if (activeTopic == 3) {
       for (var i = 0; i < textkampane.length; i++) {
         textgrafika[i].classList.remove("tra");
       };
-      for (var i = 0; i < textkampane.length; i++) {
+      for (var i = 0; i < obrkampane.length; i++) {
         obrgrafika[i].classList.remove("tra");
       };
     } else {
       for (var i = 0; i < textkampane.length; i++) {
         textweby[i].classList.remove("tra");
       };
-      for (var i = 0; i < textkampane.length; i++) {
+      for (var i = 0; i < obrkampane.length; i++) {
         obrweby[i].classList.remove("tra");
       };
     };
