@@ -229,13 +229,9 @@ function toggleMenu() {
     gpurl.addEventListener("mouseout", mOut, false);
 
     function mOver() {
-       document.getElementsByClassName("kampane-t").style.setProperty('--main-col', "gray");
-       document.getElementsByClassName("weby-t").style.setProperty('--main-col', "gray");
-       document.getElementsByClassName("grafika-t").style.setProperty('--main-col', "gray");
+       document.documentElement.style.setProperty('--main-col', "gray");
     }
 
     function mOut() {
-      document.getElementsByClassName("kampane-t").style.setProperty('--main-col', "#FF1654");
-      document.getElementsByClassName("weby-t").style.setProperty('--main-col', "#FF1654");
-      document.getElementsByClassName("grafika-t").style.setProperty('--main-col', "#FF1654");
+      document.documentElement.style.setProperty('--main-col', "#FF1654");
     }
