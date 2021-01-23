@@ -95,9 +95,7 @@ function slideOutTextAnim() {
     obrgrafika[i].classList.add("tra2");
     obrweby[i].classList.add("tra2");
   };
-  document.getElementById("kampurl").classList.add("tra");
-  document.getElementById("grapurl").classList.add("tra");
-  document.getElementById("webpurl").classList.add("tra");
+  
 }
 
 async function changeTextAnim() {
@@ -111,9 +109,6 @@ async function changeTextAnim() {
     obrgrafika[i].classList.add("hidden");
     obrweby[i].classList.add("hidden");
   };
-  document.getElementById("kampurl").classList.add("hidden");
-  document.getElementById("grapurl").classList.add("hidden");
-  document.getElementById("webpurl").classList.add("hidden");
 
   new Promise(function(resolve, reject) {
     resolve(showTextAnim());
@@ -131,8 +126,6 @@ async function showTextAnim() {
     for (var i = 0; i < obrkampane.length; i++) {
       obrkampane[i].classList.remove("hidden");
     };
-    document.getElementById("grapurl").classList.remove("hidden");
-    document.getElementById("webpurl").classList.remove("hidden");
   } else if (activeTopic == 3) {
     for (var i = 0; i < textkampane.length; i++) {
       textgrafika[i].classList.remove("hidden");
@@ -140,8 +133,6 @@ async function showTextAnim() {
     for (var i = 0; i < obrkampane.length; i++) {
       obrgrafika[i].classList.remove("hidden");
     };
-    document.getElementById("grapurl").classList.remove("hidden");
-    document.getElementById("kampurl").classList.remove("hidden");
   } else {
     for (var i = 0; i < textkampane.length; i++) {
       textweby[i].classList.remove("hidden");
@@ -149,8 +140,6 @@ async function showTextAnim() {
     for (var i = 0; i < obrkampane.length; i++) {
       obrweby[i].classList.remove("hidden");
     };
-    document.getElementById("kampurl").classList.remove("hidden");
-    document.getElementById("webpurl").classList.remove("hidden");
   };
 
   new Promise(function(resolve, reject) {
@@ -169,8 +158,6 @@ async function slideInTextAnim() {
       for (var i = 0; i < obrkampane.length; i++) {
         obrkampane[i].classList.remove("tra2");
       };
-      document.getElementById("grapurl").classList.remove("tra");
-      document.getElementById("webpurl").classList.remove("tra");
     } else if (activeTopic == 3) {
       for (var i = 0; i < textkampane.length; i++) {
         textgrafika[i].classList.remove("tra");
@@ -178,8 +165,6 @@ async function slideInTextAnim() {
       for (var i = 0; i < obrkampane.length; i++) {
         obrgrafika[i].classList.remove("tra2");
       };
-      document.getElementById("grapurl").classList.remove("tra");
-      document.getElementById("kampurl").classList.remove("tra");
     } else {
       for (var i = 0; i < textkampane.length; i++) {
         textweby[i].classList.remove("tra");
@@ -187,8 +172,6 @@ async function slideInTextAnim() {
       for (var i = 0; i < obrkampane.length; i++) {
         obrweby[i].classList.remove("tra2");
       };
-      document.getElementById("webpurl").classList.remove("tra");
-      document.getElementById("kampurl").classList.remove("tra");
     };
   }, 50);
 
