@@ -594,9 +594,6 @@ section {
       color: black;
       text-decoration: none;
       transition: all .3s ease-in-out;
-    }
-
-    #kpurl, #wpurl, #gpurl {
       display: inline-block;
     }
 
