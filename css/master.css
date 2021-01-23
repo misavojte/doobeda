@@ -568,7 +568,7 @@ section {
       font-style: italic;
     }
 
-    .clen-tymu > h3 a {
+    .clen-tymu > h3, .tym-switch > h3 a {
       padding-top: 20px;
       font-size: 1.7rem;
       margin: 0;
@@ -577,13 +577,14 @@ section {
     }
 
     @media only screen and (max-width: 400px) {
-        .clen-tymu > h3 a {
+        .clen-tymu > h3, .tym-switch > h3 a {
           font-size: 1.4rem;
         }
     }
 
 
     .tym-switch {
+      margin-top: 0;
       width: 100%;
     }
 
