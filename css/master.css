@@ -349,6 +349,12 @@ section {
       }
     }
 
+    @media only screen and (max-width: 400px) {
+      .sec-column > div > h2, .clen-tymu > h2 {
+        font-size: 1.5rem;
+      }
+    }
+
     .sec-column > div > h2 > span, .sec-column > div > p > span {
       color: var(--main-col);
       transition: color .4s;

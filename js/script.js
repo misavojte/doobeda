@@ -60,8 +60,9 @@ btnweby.addEventListener("mouseenter", function () {
 
 });
 
-btngrafika.addEventListener("mouseenter", function () {
+btngrafika.addEventListener("mouseenter", grafiAniStart());
 
+function grafiAniStart() {
   if (activeTopic != 3 && notfadingOut) {
     activeTopic = 3;
     notfadingOut = false;
@@ -79,9 +80,7 @@ btngrafika.addEventListener("mouseenter", function () {
       changeTextAnim();
     }, 300);
   }
-
-
-});
+}
 
 function slideOutTextAnim() {
   for (var i = 0; i < textkampane.length; i++) {
