@@ -390,7 +390,7 @@ section {
 
     .content-btn:hover {
       cursor: pointer;
-      opacity: 0.9;
+      opacity: 0.75;
       transform: translateY(2px);
     }
 
