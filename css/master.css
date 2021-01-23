@@ -568,7 +568,7 @@ section {
       font-style: italic;
     }
 
-    .clen-tymu h3, .tym-switch h3, .tym-switch a {
+    .clen-tymu h3 {
       padding-top: 20px;
       font-size: 1.7rem;
       margin: 0;
@@ -576,9 +576,21 @@ section {
       text-decoration: none;
     }
 
+    .tym-switch h3, .tym-switch a {
+      padding-top: 20px;
+      font-size: 1.2rem;
+      margin: 0;
+      color: black;
+      text-decoration: none;
+    }
+
     @media only screen and (max-width: 400px) {
-        .clen-tymu > h3, .tym-switch > h3, .tym-switch > a {
+        .clen-tymu > h3 {
           font-size: 1.4rem;
+        }
+
+        .tym-switch > h3, .tym-switch > a {
+          font-size: 1rem;
         }
     }
 
