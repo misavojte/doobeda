@@ -62,7 +62,10 @@ h1, h2, h3 {
 }
 
 :root {
-  --main-col: #FF1654;
+  --red: #FF1654;
+  --yellow: #F49912;
+  --blue: #2492D8;
+  --main-col: var(--red);
 }
 
 ::selection {
@@ -396,15 +399,15 @@ section {
     }
 
     .kampane-t {
-      --main-col: #FF1654;
+      --main-col: var(--red);
     }
 
     .weby-t {
-      --main-col: #F49912;
+      --main-col: var(--yellow);
     }
 
     .grafika-t {
-      --main-col: #2492D8;
+      --main-col: var(--blue);
     }
 
     .tra {
@@ -592,8 +595,16 @@ section {
       text-decoration: none;
     }
 
-    .tym-switch h3:hover, .tym-switch a:hover {
-      color: var(--main-col);
+    #kpurl h3:hover, #kpurl a:hover {
+      color: var(--red);
+    }
+
+    #wpurl h3:hover, #kpurl a:hover {
+      color: var(--yellow);
+    }
+
+    #gpurl h3:hover, #kpurl a:hover {
+      color: var(--blue);
     }
 
     @media only screen and (max-width: 400px) {
