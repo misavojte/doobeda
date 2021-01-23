@@ -154,21 +154,21 @@ async function slideInTextAnim() {
         textkampane[i].classList.remove("tra");
       };
       for (var i = 0; i < obrkampane.length; i++) {
-        obrkampane[i].classList.remove("tra");
+        obrkampane[i].classList.remove("tra2");
       };
     } else if (activeTopic == 3) {
       for (var i = 0; i < textkampane.length; i++) {
         textgrafika[i].classList.remove("tra");
       };
       for (var i = 0; i < obrkampane.length; i++) {
-        obrgrafika[i].classList.remove("tra");
+        obrgrafika[i].classList.remove("tra2");
       };
     } else {
       for (var i = 0; i < textkampane.length; i++) {
         textweby[i].classList.remove("tra");
       };
       for (var i = 0; i < obrkampane.length; i++) {
-        obrweby[i].classList.remove("tra");
+        obrweby[i].classList.remove("tra2");
       };
     };
   }, 50);
