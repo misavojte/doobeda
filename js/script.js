@@ -15,7 +15,11 @@
   var navbar = document.getElementById("navbar");
   var toggledmenu = false;
 
-btnkampane.addEventListener("mouseover", function () {
+btnkampane.addEventListener("mouseover", kamAniStart());
+btnweby.addEventListener("mouseenter", webyAniStart());
+btngrafika.addEventListener("mouseenter", grafiAniStart());
+
+function kamAniStart() {
   if (activeTopic != 1 && notfadingOut) {
 
     activeTopic = 1;
@@ -34,11 +38,9 @@ btnkampane.addEventListener("mouseover", function () {
       changeTextAnim();
     }, 300);
   }
+}
 
-});
-
-btnweby.addEventListener("mouseenter", function () {
-
+function webyAniStart() {
   if (activeTopic != 2 && notfadingOut) {
 
     activeTopic = 2;
@@ -57,10 +59,7 @@ btnweby.addEventListener("mouseenter", function () {
       changeTextAnim();
     }, 300);
   }
-
-});
-
-btngrafika.addEventListener("mouseenter", grafiAniStart());
+}
 
 function grafiAniStart() {
   if (activeTopic != 3 && notfadingOut) {
