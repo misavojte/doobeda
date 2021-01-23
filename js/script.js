@@ -96,7 +96,7 @@ function slideOutTextAnim() {
     obrweby[i].classList.add("tra2");
   };
   document.getElementById("kampurl").classList.add("tra");
-  document.getElementById("graurl").classList.add("tra");
+  document.getElementById("grapurl").classList.add("tra");
   document.getElementById("webpurl").classList.add("tra");
 }
 
@@ -112,7 +112,7 @@ async function changeTextAnim() {
     obrweby[i].classList.add("hidden");
   };
   document.getElementById("kampurl").classList.add("hidden");
-  document.getElementById("graurl").classList.add("hidden");
+  document.getElementById("grapurl").classList.add("hidden");
   document.getElementById("webpurl").classList.add("hidden");
 
   new Promise(function(resolve, reject) {
