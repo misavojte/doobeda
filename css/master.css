@@ -596,6 +596,10 @@ section {
       transition: all .3s ease-in-out;
     }
 
+    #kpurl, #wpurl, #gpurl {
+      display: inline-block;
+    }
+
     #kpurl h3:hover, #kpurl a:hover {
       color: var(--red);
     }
