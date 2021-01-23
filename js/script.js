@@ -5,6 +5,9 @@
   var textkampane = document.getElementsByClassName("kampane-t");
   var textweby = document.getElementsByClassName("weby-t");
   var textgrafika = document.getElementsByClassName("grafika-t");
+  var obrkampane = document.getElementsByClassName("kampane-o");
+  var obrweby = document.getElementsByClassName("weby-o");
+  var obrgrafika = document.getElementsByClassName("grafika-o");
   var i;
   var activeTopic = 1; //1 pro grafiku, 2 pro weby, 3 pro kampane
   var notfadingOut = true;
@@ -86,7 +89,12 @@ function slideOutTextAnim() {
     textkampane[i].classList.add("tra");
     textgrafika[i].classList.add("tra");
     textweby[i].classList.add("tra");
-  }
+  };
+  for (var i = 0; i < textkampane.length; i++) {
+    obrkampane[i].classList.add("tra2");
+    obrgrafika[i].classList.add("tra2");
+    obrweby[i].classList.add("tra2");
+  };
 }
 
 async function changeTextAnim() {
@@ -94,6 +102,11 @@ async function changeTextAnim() {
     textkampane[i].classList.add("hidden");
     textgrafika[i].classList.add("hidden");
     textweby[i].classList.add("hidden");
+  };
+  for (var i = 0; i < textkampane.length; i++) {
+    obrkampane[i].classList.add("hidden");
+    obrgrafika[i].classList.add("hidden");
+    obrweby[i].classList.add("hidden");
   };
   new Promise(function(resolve, reject) {
     resolve(showTextAnim());
@@ -108,13 +121,22 @@ async function showTextAnim() {
     for (var i = 0; i < textkampane.length; i++) {
       textkampane[i].classList.remove("hidden");
     };
+    for (var i = 0; i < textkampane.length; i++) {
+      obrkampane[i].classList.remove("hidden");
+    };
   } else if (activeTopic == 3) {
     for (var i = 0; i < textkampane.length; i++) {
       textgrafika[i].classList.remove("hidden");
     };
+    for (var i = 0; i < textkampane.length; i++) {
+      obrgrafika[i].classList.remove("hidden");
+    };
   } else {
     for (var i = 0; i < textkampane.length; i++) {
       textweby[i].classList.remove("hidden");
+    };
+    for (var i = 0; i < textkampane.length; i++) {
+      obrweby[i].classList.remove("hidden");
     };
   };
 
@@ -131,13 +153,22 @@ async function slideInTextAnim() {
       for (var i = 0; i < textkampane.length; i++) {
         textkampane[i].classList.remove("tra");
       };
+      for (var i = 0; i < textkampane.length; i++) {
+        obrkampane[i].classList.remove("tra");
+      };
     } else if (activeTopic == 3) {
       for (var i = 0; i < textkampane.length; i++) {
         textgrafika[i].classList.remove("tra");
       };
+      for (var i = 0; i < textkampane.length; i++) {
+        obrgrafika[i].classList.remove("tra");
+      };
     } else {
       for (var i = 0; i < textkampane.length; i++) {
         textweby[i].classList.remove("tra");
+      };
+      for (var i = 0; i < textkampane.length; i++) {
+        obrweby[i].classList.remove("tra");
       };
     };
   }, 50);

@@ -404,6 +404,11 @@ section {
       transform: translateX(-10%);
     }
 
+    .tra2 {
+      opacity: 0;
+      transform: translateX(10%);
+    }
+
     .first-slide {
       transition: .3s ease-out;
     }
@@ -568,6 +573,13 @@ section {
       font-size: 1.7rem;
       margin: 0;
     }
+
+    @media only screen and (max-width: 400px) {
+        .clen-tymu > h3 {
+          font-size: 1.4rem;
+        }
+    }
+
 
     .tym-switch {
       width: 100%;
