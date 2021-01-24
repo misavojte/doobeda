@@ -704,6 +704,7 @@ section {
         left: 0;
         right: 0;
         margin: auto;
+        animation: dot-move 15s infinite;
       }
 
       .kruh-velky > div {
@@ -718,6 +719,12 @@ section {
       .kruh-velky > div > img{
         height: 100%;
       }
+
+      @media only screen and (max-width:600px) {
+        #kontakt {
+          grid-template-rows: minmax(60%, ) minmax(40%, );
+          grid-template-columns: 100%;
+        }
 
 @keyframes dot-move {
   0%   {transform: translate(0%,0%);}
