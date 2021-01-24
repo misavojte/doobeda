@@ -61,6 +61,23 @@ h1, h2, h3 {
   font-family: Spartan, sans-serif;
 }
 
+h2 {
+  font-size: 3.3rem;
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
 :root {
   --red: #FF1654;
   --yellow: #F49912;
@@ -325,8 +342,9 @@ section {
   scroll-snap-align: start;
   flex-flow: column;
   display: flex;
-  justify-content: center;
   padding-top: 70px;
+  justify-items: center;
+  align-items: center;
 }
 
   #uvod {
@@ -341,24 +359,6 @@ section {
     @media only screen and (max-width: 600px) {
       .sec-column {
         padding: 15px;
-      }
-    }
-
-
-    .sec-column > div > h2, .clen-tymu > h2 {
-      font-size: 3.5rem;
-      margin: 0;
-    }
-
-    @media only screen and (max-width: 600px) {
-      .sec-column > div > h2, .clen-tymu > h2 {
-        font-size: 2rem;
-      }
-    }
-
-    @media only screen and (max-width: 400px) {
-      .sec-column > div > h2, .clen-tymu > h2 {
-        font-size: 1.5rem;
       }
     }
 
@@ -698,6 +698,11 @@ section {
         border-radius: 50%;
         background: var(--main-col);
         position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
       }
 
       .kruh-velky > div {
