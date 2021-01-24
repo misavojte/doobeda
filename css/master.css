@@ -151,7 +151,6 @@ body {
   align-items: center;
   display: flex;
   padding: 15px 25px;
-  align-self: flex-start;
     }
 
 @media only screen and (max-width: 600px) {
@@ -327,6 +326,26 @@ body {
 
 .slider::-webkit-scrollbar {
   display: none;  /* Safari and Chrome */
+}
+
+/* width */
+::-webkit-scrollbar {
+width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f3f2ef;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #1c1c1c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #000;
 }
 
 @media only screen and (min-width: 1440px) {
