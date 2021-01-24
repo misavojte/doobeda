@@ -230,6 +230,7 @@ body {
     grid-template-columns: 55% 45%;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   body > div > div {
@@ -253,13 +254,19 @@ body {
   }
 
   .img-flex {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 15px;
+    min-height: 250px;
+  }
+
+  .f-img-w {
+
   }
 
   .f-img {
-    height: auto;
-    width: 45%;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
   }
