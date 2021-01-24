@@ -724,7 +724,7 @@ section {
         #kontakt {
           grid-template-rows: minmax(60%, ) minmax(40%, );
           grid-template-columns: 100%;
-        }
+        }}
 
 @keyframes dot-move {
   0%   {transform: translate(0%,0%);}
