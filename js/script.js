@@ -8,9 +8,9 @@
   var obrkampane = document.getElementsByClassName("kampane-o");
   var obrweby = document.getElementsByClassName("weby-o");
   var obrgrafika = document.getElementsByClassName("grafika-o");
-  var bobrkampane = document.getElementsById("ic-ph-kampane");
-  var bobrweby = document.getElementsById("ic-ph-weby");
-  var bobrgrafika = document.getElementsById("ic-ph-grafika");
+  var bobrkampane = document.getElementById("ic-ph-kampane");
+  var bobrweby = document.getElementById("ic-ph-weby");
+  var bobrgrafika = document.getElementById("ic-ph-grafika");
 
   var i;
   var activeTopic = 1; //1 pro grafiku, 2 pro weby, 3 pro kampane
