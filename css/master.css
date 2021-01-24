@@ -732,6 +732,11 @@ section {
           grid-template-rows: 60% 40%;
         }}
 
+        .kruh-velky {
+          width: calc(100vh * 0.3);
+          height: calc(100vh * 0.3);
+        }
+
 @keyframes dot-move {
   0%   {transform: translate(0%,0%);}
   25%  {transform: translate(5%,1%);}
