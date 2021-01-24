@@ -613,7 +613,7 @@ section {
       font-style: italic;
     }
 
-    .clen-tymu h3 {
+    .clen-tymu h3, #reference h3 {
       padding-top: 20px;
       font-size: 1.7rem;
       margin: 0;
@@ -727,7 +727,7 @@ section {
       }
 
       .ref-img {
-        width: calc(100vh * 0.4);
+        width: calc(100vh * 0.5);
         max-width: 95%;
         top: 0;
         bottom: 0;
@@ -739,21 +739,33 @@ section {
 
       .ref-hrefs {
         width: 100%;
+        place-self: start;
       }
 
       .ref-hrefs a p{
-        margin: 10px 0;
+        margin: 7px 0;
         color: black;
         text-decoration: none;
         transition: all .3s ease-in-out;
         display: inline-block;
       }
 
+      .ref-hrefs a p:hover{
+        color: var(--red);
+      }
+
+      .ref-hrefs > p {
+        font-style: italic;
+        margin: 0px;
+      }
+
       @media only screen and (max-width:600px) {
 
         .ref-img {
-          width: calc(100vh * 0.25);
+          width: calc(100vh * 0.3);
           grid-row: 2;
+          margin: 0;
+          place-self: start;
         }
 
         #reference {
@@ -800,13 +812,6 @@ section {
         .kruh-velky {
           width: calc(100vh * 0.3);
           height: calc(100vh * 0.3);
-        }
-        .ref-img {
-          width: calc(100vh * 0.3);
-          max-width: 100%;
-          top: 0;
-          bottom: 0;
-          margin: auto;
         }
       }
 
