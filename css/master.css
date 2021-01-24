@@ -511,7 +511,13 @@ section {
       height: 120%;
       overflow: hidden;
       bottom: 0;
+      left: 0;
       border-radius: 0px 0px 1500px 1500px;
+    }
+
+    #ic-ph-weby > img{
+      position: absolute;
+      height: 100%;
     }
 
 
