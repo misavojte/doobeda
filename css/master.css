@@ -91,6 +91,10 @@ body {
   display: none;
 }
 
+.b {
+  font-weight: bold;
+}
+
 /* stajlujeme menu */
 
 #navbar {
