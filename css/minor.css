@@ -233,6 +233,7 @@ body {
     overflow-x: hidden;
   }
 
+
   body > div > div {
     box-sizing: border-box;
     min-height: 100vh;
@@ -242,6 +243,16 @@ body {
     display: flex;
     padding: 110px 40px 40px 40px;
     justify-content: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    body > div {
+      grid-template-columns: 100%;
+    }
+    body > div > div {
+      min-height: unset;
+      width: 100%;
+    }
   }
 
   .ref-img {
@@ -254,19 +265,35 @@ body {
   }
 
   .img-flex {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
-    grid-gap: 15px;
-    min-height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    align-items: center;
   }
 
-  .f-img-w {
-
+  /* Create four equal columns that sits next to each other */
+  .img-col {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
   }
 
-  .f-img {
-    height: 100%;
+  .img-col img {
+    margin-top: 8px;
+    vertical-align: middle;
     width: 100%;
-    object-fit: contain;
   }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .img-col {
+    flex: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .img-col {
+    flex: 100%;
+  }
+}
