@@ -11,6 +11,9 @@
   var bobrkampane = document.getElementById("ic-ph-kampane");
   var bobrweby = document.getElementById("ic-ph-weby");
   var bobrgrafika = document.getElementById("ic-ph-grafika");
+  var btexkampane = document.getElementById("ic-te-kampane");
+  var btexweby = document.getElementById("ic-te-weby");
+  var btexgrafika = document.getElementById("ic-te-grafika");
 
   var i;
   var activeTopic = 1; //1 pro grafiku, 2 pro weby, 3 pro kampane
@@ -39,6 +42,10 @@ function kamAniStart() {
     bobrweby.classList.add("tra0");
     bobrkampane.classList.remove("tra0");
 
+    btexgrafika.classList.remove("tra0");
+    btexweby.classList.remove("tra0");
+    btexkampane.classList.add("tra0");
+
     document.documentElement.style.setProperty('--main-col', "#FF1654");
 
     btnkampane.classList.add("active-dot");
@@ -64,6 +71,10 @@ function webyAniStart() {
     bobrweby.classList.remove("tra0");
     bobrkampane.classList.add("tra0");
 
+    btexgrafika.classList.remove("tra0");
+    btexweby.classList.add("tra0");
+    btexkampane.classList.remove("tra0");
+
     document.documentElement.style.setProperty('--main-col', "#F49912");
 
     btnweby.classList.add("active-dot");
@@ -87,6 +98,10 @@ function grafiAniStart() {
     bobrgrafika.classList.remove("tra0");
     bobrweby.classList.add("tra0");
     bobrkampane.classList.add("tra0");
+
+    btexgrafika.classList.add("tra0");
+    btexweby.classList.remove("tra0");
+    btexkampane.classList.remove("tra0");
 
     document.documentElement.style.setProperty('--main-col', "#2492D8");
 

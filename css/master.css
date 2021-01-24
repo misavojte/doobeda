@@ -517,12 +517,16 @@ section {
       bottom: 0;
       left: 0;
       border-radius: 0px 0px 1500px 1500px;
-      transition: all .3s ease-in-out;
+      transition: all .6s ease-in-out;
     }
 
     #ic-ph-weby > img, #ic-ph-kampane > img, #ic-ph-grafika > img{
       position: absolute;
       height: 100%;
+    }
+
+    #ic-te-weby, #ic-te-kampane, #ic-te-grafika {
+      transition: all .6s ease-in-out;
     }
 
 
