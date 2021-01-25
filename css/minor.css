@@ -274,7 +274,7 @@ body {
   /* Create four equal columns that sits next to each other */
   .img-col {
     flex: 25%;
-    max-width: 25%;
+    max-width: calc(100vh/4);
     padding: 0 4px;
   }
 
@@ -295,5 +295,17 @@ body {
 @media screen and (max-width: 600px) {
   .img-col {
     flex: 100%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  body > div {
+    padding: 0 calc((100vw - 1440px)/3);
+      }
+}
+
+@media only screen and (max-width: 600px) {
+  body > div > div {
+    padding: 85px 15px 15px 15px;
   }
 }
