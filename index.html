@@ -102,7 +102,14 @@
 
         <div class="d-wrap d-kampane">
           <div id="btnkampane" class="dot active-dot">
-            <div><div id="ic-ph-kampane"><img src="img/kampane.png" alt="Megafoník" loading="lazy"></div><div>
+            <div><div id="ic-ph-kampane">
+              <picture>
+                <source srcset="img/kampane.webp" type="image/webp">
+                <source srcset="img/kampane.png" type="image/png">
+                <img src="img/kampane.png" alt="Megafoník" loading="lazy">
+              </picture>
+            </div>
+            <div>
               <p class="tra0" id="ic-te-kampane">Kampaně</p>
             </div></div>
           </div>

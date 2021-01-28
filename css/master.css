@@ -545,7 +545,7 @@ section {
       transition: all .6s ease-in-out;
     }
 
-    #ic-ph-weby > img, #ic-ph-kampane > img, #ic-ph-grafika > img{
+    #ic-ph-weby img, #ic-ph-kampane img, #ic-ph-grafika img{
       position: absolute;
       width: 100%;
       bottom: 0;
