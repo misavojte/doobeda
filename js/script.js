@@ -18,6 +18,7 @@
   var i;
   var activeTopic = 1; //1 pro grafiku, 2 pro weby, 3 pro kampane
   var notfadingOut = true;
+  var bubblesinteracted = false;
 
   var navicon = document.getElementById("nav-icon3");
   var navitems = document.getElementById("nav-items");
@@ -25,15 +26,45 @@
   var navbar = document.getElementById("navbar");
   var toggledmenu = false;
 
-btnkampane.addEventListener("mouseover", kamAniStart);
-btnweby.addEventListener("mouseenter", webyAniStart);
-btngrafika.addEventListener("mouseenter", grafiAniStart);
+btnkampane.addEventListener("mouseover", function() {
+  kamAniStart(false);
+});
+btnweby.addEventListener("mouseenter", function() {
+  webyAniStart(false);
+});
+btngrafika.addEventListener("mouseenter", function() {
+  grafiAniStart(false);
+});
 
-function kamAniStart() {
+autoBubbleInteraction();
+
+function autoBubbleInteraction() {
+    setTimeout(function() {
+      if (!bubblesinteracted) {
+        webyAniStart(true);
+        setTimeout(function() {
+          if (!bubblesinteracted) {
+            grafiAniStart(true);
+            setTimeout(function() {
+              if (!bubblesinteracted) {
+                kamAniStart(true);
+              }
+            }, 3000);
+          }
+        }, 3000);
+      }
+    }, 3000);
+}
+
+function kamAniStart(autotrigger) {
   if (activeTopic != 1 && notfadingOut) {
 
     activeTopic = 1;
     notfadingOut = false;
+
+    if (!autotrigger) {
+      bubblesinteracted = true;
+    };
 
     btngrafika.classList.remove("active-dot");
     btnweby.classList.remove("active-dot");
@@ -58,11 +89,15 @@ function kamAniStart() {
   }
 }
 
-function webyAniStart() {
+function webyAniStart(autotrigger) {
   if (activeTopic != 2 && notfadingOut) {
 
     activeTopic = 2;
     notfadingOut = false;
+
+    if (!autotrigger) {
+      bubblesinteracted = true;
+    };
 
     btngrafika.classList.remove("active-dot");
     btnkampane.classList.remove("active-dot");
@@ -87,10 +122,14 @@ function webyAniStart() {
   }
 }
 
-function grafiAniStart() {
+function grafiAniStart(autotrigger) {
   if (activeTopic != 3 && notfadingOut) {
     activeTopic = 3;
     notfadingOut = false;
+
+    if (!autotrigger) {
+      bubblesinteracted = true;
+    };
 
     btnkampane.classList.remove("active-dot");
     btnweby.classList.remove("active-dot");
