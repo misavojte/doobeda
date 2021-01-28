@@ -532,11 +532,9 @@ section {
       height: 120%;
       overflow: hidden;
       bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
       border-radius: 0px 0px 1500px 1500px;
       transition: all .6s ease-in-out;
+      padding: 0;
     }
 
     #ic-ph-weby img, #ic-ph-kampane img, #ic-ph-grafika img{
