@@ -105,27 +105,22 @@ html, body {
 
 body {
       background-color: #f3f2ef;
+      overflow: overlay;
     }
 
-/* width */
-::-webkit-scrollbar {
-  width: 2px;
-}
+    ::-webkit-scrollbar {
+      width: 5px;
+      height: 7px;
+    }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f3f2ef;
-}
+    ::-webkit-scrollbar-thumb {
+      background: rgba(90, 90, 90);
+      border-radius: 15px;
+    }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #1c1c1c;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #000;
-}
+    ::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0);
+    }
 
 
 
@@ -342,7 +337,18 @@ body {
   height: auto;
   display: grid;
   grid-template-columns: 60% 40%;
-  grid-template-rows: repeat(5, max-content);
+  grid-template-rows: repeat(3, max-content);
+  position: absolute;
+}
+
+.slider-below {
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column: 1 / 3;
+  grid-template-rows: repeat(3, max-content);
   overflow-x: hidden;
 }
 
