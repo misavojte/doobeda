@@ -100,13 +100,34 @@ html, body {
     place-items: center;
     height: 100%;
     width: 100%;
-    overflow: hidden;
     margin: 0;
   }
 
 body {
       background-color: #f3f2ef;
     }
+
+    /* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f3f2ef;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1c1c1c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000;
+}
+
+
 
 .hidden {
   display: none;
@@ -316,41 +337,13 @@ body {
 /* stajlujeme obsah */
 
 .slider {
-  /* scroll-snap-type: y proximity; */
-  overflow-y: scroll;
   width: 100%;
-  scroll-behavior: smooth;
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
   box-sizing: border-box;
-  overflow-x: hidden;
+  height: auto;
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: repeat(5, max-content);
-}
-
-.slider::-webkit-scrollbar {
-  display: none;  /* Safari and Chrome */
-}
-
-/* width */
-::-webkit-scrollbar {
-width: 2px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-background: #f3f2ef;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-background: #1c1c1c;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-background: #000;
+  overflow-x: hidden;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -363,7 +356,6 @@ section {
   box-sizing: border-box;
   min-height: 100vh;
   width: 100%;
-  scroll-snap-align: start;
   flex-flow: column;
   display: flex;
   padding-top: 70px;
@@ -657,6 +649,7 @@ section {
       text-decoration: none;
       transition: all .3s ease-in-out;
       display: inline-block;
+      cursor: pointer;
     }
 
     #kpurl h3:hover, #kpurl a:hover {
@@ -717,7 +710,7 @@ section {
       border-radius: 0px 0px 1500px 1500px;
     }
 
-    .tym-kruh-velky > div > img{
+    .tym-kruh-velky > div img{
       height: 100%;
     }
 
@@ -826,7 +819,7 @@ section {
         border-radius: 0px 0px 1500px 1500px;
       }
 
-      .kruh-velky > div > img{
+      .kruh-velky > div img{
         height: 100%;
       }
 
