@@ -547,37 +547,6 @@ section {
       transition: all .6s ease-in-out;
     }
 
-
-    @media only screen and (min-width: 1365px) and (min-height: 787px) {
-      .dot {
-
-      }
-    }
-
-    @media only screen and (max-width: 600px) {
-      .dot {
-
-      }
-    }
-
-    @media only screen and (max-width: 400px) {
-      .dot {
-
-      }
-    }
-
-    @media only screen and (min-width: 1365px) and (min-height: 787px) {
-      .active-dot {
-
-      }
-    }
-
-    @media only screen and (max-width: 600px) {
-      .active-dot {
-
-      }
-    }
-
     @media only screen and (max-width: 400px) {
       .active-dot {
         width: 100%;
