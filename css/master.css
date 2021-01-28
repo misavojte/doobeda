@@ -3,6 +3,7 @@
   font-family: 'Spartan';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url('../fonts/spartan-v2-latin-ext_latin-regular.eot'); /* IE9 Compat Modes */
   src: local(''),
        url('../fonts/spartan-v2-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -16,6 +17,7 @@
   font-family: 'Spartan';
   font-style: normal;
   font-weight: 800;
+  font-display: swap;
   src: url('../fonts/spartan-v2-latin-ext_latin-800.eot'); /* IE9 Compat Modes */
   src: local(''),
        url('../fonts/spartan-v2-latin-ext_latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -30,6 +32,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url('../fonts/montserrat-v15-latin-ext_latin-regular.eot'); /* IE9 Compat Modes */
   src: local(''),
        url('../fonts/montserrat-v15-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -43,6 +46,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
   src: url('../fonts/montserrat-v15-latin-ext_latin-600.eot'); /* IE9 Compat Modes */
   src: local(''),
        url('../fonts/montserrat-v15-latin-ext_latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -312,7 +316,7 @@ body {
 /* stajlujeme obsah */
 
 .slider {
-  scroll-snap-type: y proximity;
+  /* scroll-snap-type: y proximity; */
   overflow-y: scroll;
   width: 100%;
   scroll-behavior: smooth;
