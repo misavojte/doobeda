@@ -107,7 +107,7 @@ body {
       background-color: #f3f2ef;
     }
 
-    /* width */
+/* width */
 ::-webkit-scrollbar {
   width: 2px;
 }
@@ -533,6 +533,8 @@ section {
       overflow: hidden;
       bottom: 0;
       left: 0;
+      right: 0;
+      margin: auto;
       border-radius: 0px 0px 1500px 1500px;
       transition: all .6s ease-in-out;
     }
