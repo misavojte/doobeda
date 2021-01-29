@@ -355,6 +355,9 @@ body {
   .slider, .slider-below {
     padding: 0 calc((100vw - 1440px)/3);
       }
+  .slider-below {
+    padding-right: calc((100vw - 1440px)/3);
+      }
 }
 
 section {
