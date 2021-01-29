@@ -1,4 +1,9 @@
 RewriteEngine On
+RewriteBase /
+
+RewriteCond %{ENV:HTTPS} !^.*on
+RewriteRule ^(.*)$ https://www.doobeda.agency/$1 [R,L]
+
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html

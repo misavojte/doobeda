@@ -95,9 +95,6 @@ h2 {
 }
 
 html, body {
-    display: flex;
-    flex-direction: column;
-    place-items: center;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -480,12 +477,6 @@ section {
       max-width: 50vh;
     }
 
-    @media only screen and (max-width: 400px) and (min-height: 680px), (min-width: 1599px) and (min-height: 899px), (min-height: 1000px) {
-      .bubble-container {
-
-      }
-    }
-
     .dot {
       box-sizing: content-box;
       width: 40%;
@@ -589,13 +580,6 @@ section {
       display: flex;
       flex-flow: column;
       justify-content: flex-end;
-    }
-
-    .small-title  {
-      font-size: .8rem;
-      letter-spacing: 4px;
-      margin: 0;
-      text-transform: uppercase;
     }
 
     .clen-tymu p:nth-of-type(1) {
