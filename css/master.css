@@ -73,15 +73,6 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-  }
-
 body {
       background-color: #f3f2ef;
       overflow: overlay;
@@ -795,17 +786,18 @@ section {
         color: var(--main-col);
       }
 
+      footer p {
+        padding: 25px;
+        margin: 0
+      }
+
       footer {
-        padding: 15px;
         width: 100%
       }
 
       @media only screen and (min-width: 1440px) {
-        main, header {
+        main, header, footer {
           padding: 0 calc((100vw - 1440px)/2);
-        }
-        footer {
-          padding: 15px calc((100vw - 1440px)/2);
         }
         .slider-below {
           padding-right: calc((100vw - 1440px)/2);

@@ -299,15 +299,13 @@ body {
   }
 }
 
-footer {
-  padding: 15px;
+footer p {
+  padding: 25px;
+  margin: 0
 }
 
 @media only screen and (min-width: 1440px) {
-  main, header {
+  main, header, footer {
     padding: 0 calc((100vw - 1440px)/2);
-  }
-  footer {
-    padding: 15px calc((100vw - 1440px)/2);
   }
 }
