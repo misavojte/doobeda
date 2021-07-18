@@ -220,6 +220,11 @@ body {
                   color: var(--main-col);
                 }
 
+  noscript {
+    color: var(--main-col);
+    font-size: 1.2rem; 
+  }
+
   main {
     display: grid;
     grid-template-columns: 55% 45%;

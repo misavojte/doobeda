@@ -94,6 +94,10 @@ h2 {
   background: var(--main-col);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -120,6 +124,11 @@ body {
 
     ::-webkit-scrollbar-track {
       background: rgba(0, 0, 0, 0);
+    }
+
+    noscript {
+      color: var(--main-col);
+      font-size: 1.2rem;
     }
 
 
