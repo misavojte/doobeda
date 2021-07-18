@@ -134,7 +134,7 @@ body {
 
 /* stajlujeme menu */
 
-#navbar {
+header {
   box-sizing: border-box;
   overflow: hidden;
   width: 100%;
@@ -150,13 +150,13 @@ body {
   transition: all .6s ease-in-out;
     }
 
-    #navbar.open {
+    header.open {
       max-height: 100vh;
       height: 100vh;
         }
 
     @media only screen and (min-width: 1440px) {
-      #navbar {
+      header {
         padding: 0 calc((100vw - 1440px)/3);
           }
     }
@@ -180,7 +180,7 @@ body {
       }
     }
 
-.menu a {
+header a {
  float: left;
  color: #000;
  text-align: center;
@@ -190,7 +190,7 @@ body {
  margin: 0;
     }
 
-.menu h1 {
+header h1 {
  padding: 0;
  margin: 0;
         }

@@ -23,7 +23,7 @@
   var navicon = document.getElementById("nav-icon3");
   var navitems = document.getElementById("nav-items");
   var menuodkazy = document.getElementsByClassName("menu-hrefs");
-  var navbar = document.getElementById("navbar");
+  var navbar = document.getElementById("myHeader");
   var toggledmenu = false;
 
 btnkampane.addEventListener("mouseover", function() {
