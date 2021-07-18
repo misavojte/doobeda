@@ -52,43 +52,6 @@
        url('../fonts/montserrat-v15-latin-ext_latin-600.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
 
-
-p, a {
-  font-family: Montserrat, sans-serif;
-}
-
-h1, h2, h3 {
-  font-family: Spartan, sans-serif;
-}
-
-h2 {
-  font-size: 3.3rem;
-  margin: 0;
-}
-
-h3 {
-  font-size: 2.7rem;
-  margin: 0;
-}
-
-@media only screen and (max-width: 600px) {
-  h2 {
-    font-size: 2rem;
-  }
-  h3 {
-    font-size: 1.8rem;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  h2 {
-    font-size: 1.5rem;
-  }
-  h3 {
-    font-size: 1.3rem;
-  }
-}
-
 :root {
   --red: #FF1654;
   --yellow: #F49912;
@@ -113,6 +76,39 @@ html, body {
 body {
       background-color: #f3f2ef;
       overflow: overlay;
+      font-family: Montserrat, sans-serif;
+    }
+
+    h1, h2, h3 {
+      font-family: Spartan, sans-serif;
+    }
+
+    h2 {
+      font-size: 3.3rem;
+      margin: 0;
+    }
+
+    h3 {
+      font-size: 2.7rem;
+      margin: 0;
+    }
+
+    @media only screen and (max-width: 600px) {
+      h2 {
+        font-size: 2rem;
+      }
+      h3 {
+        font-size: 1.8rem;
+      }
+    }
+
+    @media only screen and (max-width: 400px) {
+      h2 {
+        font-size: 1.5rem;
+      }
+      h3 {
+        font-size: 1.3rem;
+      }
     }
 
     ::-webkit-scrollbar {
@@ -222,7 +218,9 @@ body {
 
   noscript {
     color: var(--main-col);
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
+    padding: 15px;
+    margin-top: 70px;
   }
 
   main {

@@ -57,31 +57,6 @@
 }
 
 
-p, a {
-  font-family: Montserrat, sans-serif;
-}
-
-h1, h2, h3 {
-  font-family: Spartan, sans-serif;
-}
-
-h2 {
-  font-size: 3.3rem;
-  margin: 0;
-}
-
-@media only screen and (max-width: 600px) {
-  h2 {
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  h2 {
-    font-size: 1.5rem;
-  }
-}
-
 :root {
   --red: #FF1654;
   --yellow: #F49912;
@@ -110,6 +85,7 @@ html, body {
 body {
       background-color: #f3f2ef;
       overflow: overlay;
+      font-family: Montserrat, sans-serif;
     }
 
     ::-webkit-scrollbar {
@@ -129,9 +105,30 @@ body {
     noscript {
       color: var(--main-col);
       font-size: 1.2rem;
+      padding: 15px;
+      margin-top: 70px;
     }
 
+    h1, h2, h3 {
+      font-family: Spartan, sans-serif;
+    }
 
+    h2 {
+      font-size: 3.3rem;
+      margin: 0;
+    }
+
+    @media only screen and (max-width: 600px) {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    @media only screen and (max-width: 400px) {
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
 
 .hidden {
   display: none;
