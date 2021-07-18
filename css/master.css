@@ -810,7 +810,9 @@ section {
         color: var(--main-col);
       }
 
-
+      footer {
+        padding: 15px;
+      }
 
 @keyframes dot-move {
   0%   {transform: translate(0%,0%);}
