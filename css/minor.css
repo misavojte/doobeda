@@ -79,7 +79,7 @@ body {
       font-family: Montserrat, sans-serif;
     }
 
-    h1, h2, h3 {
+    h2, h3 {
       font-family: Spartan, sans-serif;
     }
 
@@ -109,10 +109,6 @@ body {
       h3 {
         font-size: 1.3rem;
       }
-    }
-
-    a {
-      font-family: Montserrat, sans-serif;
     }
 
     ::-webkit-scrollbar {
@@ -189,6 +185,8 @@ body {
     header h1 {
      padding: 0;
      margin: 0;
+     font-size: 1.5rem;
+     font-weight: normal;
             }
 
 
