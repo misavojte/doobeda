@@ -161,12 +161,6 @@ header {
       height: 100vh;
         }
 
-    @media only screen and (min-width: 1440px) {
-      header {
-        padding: 0 calc((100vw - 1440px)/3);
-          }
-    }
-
 .menu-wrapper {
   width: 100%;
   display: inherit;
@@ -346,7 +340,6 @@ main {
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: repeat(3, max-content);
-  position: absolute;
 }
 
 .slider-below {
@@ -360,11 +353,11 @@ main {
 }
 
 @media only screen and (min-width: 1440px) {
-  main {
-    padding: 0 calc((100vw - 1440px)/3);
+  main, header, footer {
+    padding: 0 calc((100vw - 1440px)/2);
       }
   .slider-below {
-    padding-right: calc((100vw - 1440px)/3);
+    padding-right: calc((100vw - 1440px)/2);
       }
 }
 
@@ -812,6 +805,7 @@ section {
 
       footer {
         padding: 15px;
+        width: 100%
       }
 
 @keyframes dot-move {
