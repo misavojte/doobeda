@@ -111,6 +111,10 @@ body {
       }
     }
 
+    a {
+      font-family: Montserrat, sans-serif;
+    }
+
     ::-webkit-scrollbar {
       width: 4px;
       height: 7px;
