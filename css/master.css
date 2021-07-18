@@ -352,14 +352,6 @@ main {
   overflow-x: hidden;
 }
 
-@media only screen and (min-width: 1440px) {
-  main, header, footer {
-    padding: 0 calc((100vw - 1440px)/2);
-      }
-  .slider-below {
-    padding-right: calc((100vw - 1440px)/2);
-      }
-}
 
 section {
   box-sizing: border-box;
@@ -806,6 +798,18 @@ section {
       footer {
         padding: 15px;
         width: 100%
+      }
+
+      @media only screen and (min-width: 1440px) {
+        main, header, footer {
+          padding: 0 calc((100vw - 1440px)/2);
+        }
+        footer {
+          padding: 15px calc((100vw - 1440px)/2);
+        }
+        .slider-below {
+          padding-right: calc((100vw - 1440px)/2);
+        }
       }
 
 @keyframes dot-move {
