@@ -801,7 +801,7 @@ section {
       }
 
       @media only screen and (min-width: 1440px) {
-        main, header, footer {
+        main, header {
           padding: 0 calc((100vw - 1440px)/2);
         }
         footer {
