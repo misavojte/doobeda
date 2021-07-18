@@ -402,25 +402,20 @@ section {
       width: 100%;
     }
 
-    button {
+    .btn {
       background-color: var(--main-col);
       border-style: none;
       padding: 13px 27px;
       margin-top: 10px;
       transition: all .3s ease-in-out;
       display: inline-block;
-    }
-
-    button a {
       font-size: 1rem;
       font-weight: bold;
       text-decoration: none;
       color: white;
-      display: block;
-      height: 100%;
     }
 
-    button:hover {
+    .btn:hover {
       cursor: pointer;
       opacity: 0.75;
       transform: translateY(-2px);
