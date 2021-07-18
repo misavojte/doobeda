@@ -131,7 +131,7 @@ body {
 
     /* stajlujeme menu */
 
-    #navbar {
+    header {
       box-sizing: border-box;
       overflow: hidden;
       width: 100%;
@@ -147,13 +147,13 @@ body {
       transition: all .6s ease-in-out;
         }
 
-        #navbar.open {
+        header.open {
           max-height: 100vh;
           height: 100vh;
             }
 
         @media only screen and (min-width: 1440px) {
-          #navbar {
+          header {
             padding: 0 calc((100vw - 1440px)/3);
               }
         }
@@ -176,7 +176,7 @@ body {
       padding: 15px 25px;
         }
 
-    .menu a {
+    header a {
      float: left;
      color: #000;
      text-align: center;
@@ -186,7 +186,7 @@ body {
      margin: 0;
         }
 
-    .menu h1 {
+    header h1 {
      padding: 0;
      margin: 0;
             }
@@ -220,7 +220,7 @@ body {
                   color: var(--main-col);
                 }
 
-  body > div {
+  main {
     display: grid;
     grid-template-columns: 55% 45%;
     position: absolute;
@@ -230,7 +230,7 @@ body {
   }
 
 
-  body > div > div {
+  main > div {
     box-sizing: border-box;
     min-height: 100vh;
     width: 100%;
@@ -241,10 +241,10 @@ body {
   }
 
   @media screen and (max-width: 600px) {
-    body > div {
+    main {
       grid-template-columns: 100%;
     }
-    body > div > div {
+    main > div {
       min-height: unset;
       width: 100%;
     }
@@ -294,13 +294,13 @@ body {
 }
 
 @media only screen and (min-width: 1440px) {
-  body > div {
+  main {
     padding: 0 calc((100vw - 1440px)/3);
       }
 }
 
 @media only screen and (max-width: 600px) {
-  body > div > div {
+  main > div {
     padding: 85px 15px 15px 15px;
   }
 }
